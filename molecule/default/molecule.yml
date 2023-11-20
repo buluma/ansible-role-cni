@@ -14,58 +14,13 @@ lint: |
 driver:
   name: docker
 platforms:
-  - name: "cni-${image:-docker-centos7-ansible}-${tag:-latest}${TOX_ENVNAME}"
-    image: "${namespace:-buluma}/${image:-docker-centos7-ansible}:${tag:-latest}"
+  - name: "cni-${image:-fedora}-${tag:-latest}${TOX_ENVNAME}"
+    image: "${namespace:-buluma}/${image:-fedora}:${tag:-latest}"
     command: /sbin/init
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    cgroupns_mode: host
     privileged: yes
     pre_build_image: yes
-    tty: true
-    environment:
-      container: docker
 provisioner:
   name: ansible
-  config_options:
-    defaults:
-      interpreter_python: auto_legacy_silent
-      callback_whitelist: profile_tasks
-    ssh_connection:
-      pipelining: true
-scenario:
-  create_sequence:
-    - dependency
-    - create
-    - prepare
-  check_sequence:
-    - dependency
-    - cleanup
-    - destroy
-    - create
-    - prepare
-    - converge
-    - check
-    - destroy
-  converge_sequence:
-    - dependency
-    - create
-    - prepare
-    - converge
-  destroy_sequence:
-    - dependency
-    - cleanup
-    - destroy
-  test_sequence:
-    - dependency
-    - lint
-    - cleanup
-    - destroy
-    - syntax
-    - create
-    - prepare
-    - converge
-    # - idempotence
-    - side_effect
-    - verify
-    - cleanup
-    - destroy

@@ -5,4 +5,4 @@
 repository:
   description: Ansible role to install CNI (Container Network Interface).
   homepage: https://buluma.github.io/
-  topics: kubernetes, k8s, docker, container, containers, network, networking, connectivity, cni, containernetworking, ansible, molecule, tox, playbook, hacktoberfest
+  topics: kubernetes, k8s, docker, container, containers, network, networking, connectivity, cni, containernetworking, ansible, molecule, tox, playbook
