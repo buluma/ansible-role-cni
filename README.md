@@ -1,10 +1,10 @@
-# [Ansible role cni](#cni)
+# Ansible role [cni](https://galaxy.ansible.com/ui/standalone/roles/buluma/cni/documentation)
 
 Ansible role to install CNI (Container Network Interface).
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-cni/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-cni/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-cni.svg)](https://github.com/buluma/ansible-role-cni/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-cni.svg)](https://github.com/buluma/ansible-role-cni/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-cni.svg)](https://github.com/buluma/ansible-role-cni/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-cni/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-cni/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-cni.svg)](https://github.com/buluma/ansible-role-cni/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-cni.svg)](https://github.com/buluma/ansible-role-cni/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-cni.svg)](https://github.com/buluma/ansible-role-cni/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/cni)](https://galaxy.ansible.com/ui/standalone/roles/buluma/cni/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -164,9 +164,7 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [Author Information](#author-information)
 
-[Michael Buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
