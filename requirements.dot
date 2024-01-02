@@ -1,0 +1,13 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "cni" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+    "buluma.epel" [fillcolor=green style=filled]
+    "buluma.ca_certificates" [fillcolor=green style=filled]
+  }
+  "cni" -> "buluma.bootstrap"
+  "cni" -> "buluma.epel"
+  "cni" -> "buluma.ca_certificates"
+}
